@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <div class="logo">
+                <img src="" alt="Pari Poly Plast Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <a href="tel:+" class="btn-primary">📞 Call Us</a>
+                <a href="#" class="btn-secondary">Send Inquiry</a>
+            </div>
+        </div>
+    </header>
+
+<div>
+    <section id="contact" class="contact-details">
+        <h2>Contact Details</h2>
+        <p><strong>People:</strong> Mr Piyush, Proprietor</p>
+        <p><strong>Contact Number:</strong> <a href="tel:+918045478746">08045478746</a></p>
+        <p><strong>Address:</strong> UNIT NO-1, PLOT NO-53, Old GIDC, Near Water Tank, Gundlav, Valsad-396035, Gujarat, India</p>
+        <button onclick="window.location.href='tel:+918045478746'">Call Me</button>
+        <button onclick="window.location.href='sms:+918045478746'">Send SMS</button>
+    </section>
+
+    <section id="contact-form" class="contact-form">
+        <h3>Contact Us</h3>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="country-code">Country Code:</label>
+                <div class="country-code-container">
+                    <img id="country-flag" src="images/india-flag.png" alt="Country Flag">
+                    <select id="country-code" name="country-code" required onchange="updateFlag(this)">
+                        <option value="+91" data-flag="images/india-flag.png">+91 (India)</option>
+                        <option value="+1" data-flag="images/usa-flag.png">+1 (USA)</option>
+                        <option value="+44" data-flag="images/uk-flag.png">+44 (UK)</option>
+                        <option value="+61" data-flag="images/australia-flag.png">+61 (Australia)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Describe Your Requirement:</label>
+                <textarea id="description" name="description" placeholder="Write your requirement in detail..." required></textarea>
+            </div>
+
+            <button type="submit">Contact</button>
+        </form>
+    </section>
+</div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Plast | All rights reserved</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/Facebook.jpg" alt="Facebook"></a>
+                <a href="#"><img src="images/linkedinimage3.jpg" alt="LinkedIn"></a>
+                <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>  
