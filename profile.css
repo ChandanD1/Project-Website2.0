@@ -1,3 +1,4 @@
+profile.css:-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 
 :root {
@@ -191,7 +192,7 @@ p {
     opacity: 1;
     transform: scaleX(1);
     transform-origin: left;
-    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition: opacity 500ms ease-in==, transform 500ms ease-in;
     transition-delay: 500ms;
   }
 }
